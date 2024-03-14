@@ -104,4 +104,15 @@ const inventors = [
 
     // 8. Reduce Exercise
     // Sum up the instances of each of these
-    const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck' ];
+    const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck','chico moedas' ];
+
+    const countedData = data.reduce((acc, curr) => {
+      if (acc[curr]) {
+          acc[curr]++;
+      } else {
+          acc[curr] = 1;
+      }
+      return acc;
+  }, {});
+  
+  console.log(countedData);
