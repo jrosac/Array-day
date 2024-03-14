@@ -80,7 +80,7 @@ const inventors = [
       b = b.passed - b.year
       return a>b ? -1 : 1
     })
-    console.table(oldest2)
+     console.table(oldest2)
     
 
     // 6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
